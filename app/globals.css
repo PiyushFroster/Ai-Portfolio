@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 196 14% 96%;
+    --foreground: 190 45% 6%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 190 45% 6%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 190 45% 6%;
+    
+    --primary: 187 85% 28%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 187 48% 40%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 196 14% 90%;
+    --muted-foreground: 196 14% 30%;
+    
+    --accent: 196 29% 59%;
+    --accent-foreground: 196 72% 14%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 196 14% 86%;
+    --input: 196 14% 86%;
+    --ring: 187 85% 28%;
+    
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    --background: 196 72% 6%;
+    --foreground: 0 0% 98%;
+    
+    --card: 187 56% 12%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 196 72% 6%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 187 85% 28%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 196 29% 59%;
+    --secondary-foreground: 196 72% 14%;
+    
+    --muted: 196 72% 12%;
+    --muted-foreground: 196 14% 70%;
+    
+    --accent: 185 81% 33%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 196 72% 16%;
+    --input: 196 72% 16%;
+    --ring: 187 85% 28%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(to bottom right, 
+                               hsl(var(--background)), 
+                               hsl(var(--background)), 
+                               hsl(var(--primary) / 0.08));
+  }
+  
+  .skills-gradient {
+    background: linear-gradient(to top left, 
+                               hsl(var(--background)), 
+                               hsl(var(--background)), 
+                               hsl(var(--accent) / 0.1));
+  }
+  
+  .projects-gradient {
+    background: linear-gradient(to bottom left, 
+                               hsl(var(--background)), 
+                               hsl(var(--background)), 
+                               hsl(var(--secondary) / 0.1));
+  }
+  
+  .contact-gradient {
+    background: linear-gradient(to top right, 
+                               hsl(var(--background)), 
+                               hsl(var(--background)), 
+                               hsl(var(--primary) / 0.08));
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    to right,
+    hsl(var(--background)) 8%,
+    hsl(var(--muted)) 18%,
+    hsl(var(--background)) 33%
+  );
+  background-size: 2000px 100%;
+  animation: shimmer 2s linear infinite;
+}
