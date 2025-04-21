@@ -110,18 +110,22 @@ export default function HeroSection() {
         </motion.div>
         
         <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.7, delay: 1.2 }}
-  className="absolute bottom-8 left-0 right-0 mx-auto w-fit" // Changed positioning
->
-  <Button
-    variant="ghost"
-    size="icon"
-    className="animate-bounce"
-    onClick={() => scrollToSection('#about')}
-  >
-    <ArrowDown className="h-5 w-5" />
-    <span className="sr-only">Scroll Down</span>
-  </Button>
-</motion.div>
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 1.2 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        >
+          <Button
+            variant="ghost"
+            size="icon"
+            className="animate-bounce"
+            onClick={() => scrollToSection('#about')}
+          >
+            <ArrowDown className="h-5 w-5" />
+            <span className="sr-only">Scroll Down</span>
+          </Button>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
