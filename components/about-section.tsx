@@ -19,7 +19,7 @@ export default function AboutSection() {
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <div className="w-20 h-1 bg-primary mb-6 rounded-full"></div>
           <p className="max-w-2xl text-muted-foreground">
-            I'm a passionate student developer on a journey to explore the vast world of programming.
+            I&#39;m a passionate student developer on a journey to explore the vast world of programming.
           </p>
         </motion.div>
 
@@ -72,14 +72,14 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-bold">Hello, I'm Piyush!</h3>
+            <h3 className="text-2xl font-bold">Hello, I&#39;m Piyush!</h3>
             <p className="text-muted-foreground">
-              I'm currently a student passionate about programming and technology. I enjoy solving
+              I&#39;m currently a student passionate about programming and technology. I enjoy solving
               complex problems and building applications that make a difference.
             </p>
             <p className="text-muted-foreground">
-              My journey in programming started with C++, and I've since expanded into full-stack
-              development. I'm currently learning Python to broaden my skill set even further.
+              My journey in programming started with C++, and I&#39;ve since expanded into full-stack
+              development. I&#39;m currently learning Python to broaden my skill set even further.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">

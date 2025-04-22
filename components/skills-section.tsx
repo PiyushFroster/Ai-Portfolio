@@ -72,7 +72,7 @@ export default function SkillsSection() {
           <h2 className="text-3xl font-bold mb-4">My Skills</h2>
           <div className="w-20 h-1 bg-primary mb-6 rounded-full"></div>
           <p className="max-w-2xl text-muted-foreground">
-            A collection of technologies and tools I've worked with.
+            A collection of technologies and tools I&#39;ve worked with.
             Always expanding my knowledge and adding new skills to my toolkit.
           </p>
         </motion.div>

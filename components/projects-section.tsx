@@ -68,7 +68,7 @@ export default function ProjectsSection() {
           <h2 className="text-3xl font-bold mb-4">My Projects</h2>
           <div className="w-20 h-1 bg-primary mb-6 rounded-full"></div>
           <p className="max-w-2xl text-muted-foreground">
-            Here are some of the projects I've worked on. Each project reflects my passion
+            Here are some of the projects I&#39;ve worked on. Each project reflects my passion
             for learning and exploring different technologies.
           </p>
         </motion.div>

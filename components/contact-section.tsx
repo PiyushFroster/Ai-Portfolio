@@ -199,10 +199,10 @@ export default function ContactSection() {
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-4">Let's Work Together</h3>
+                <h3 className="text-xl font-bold mb-4">Let&#39;s Work Together</h3>
                 <p className="mb-4 text-muted-foreground">
-                  I'm currently available for freelance work and open to collaboration opportunities.
-                  If you have a project in mind, let's discuss how we can make it happen!
+                  I&#39;m currently available for freelance work and open to collaboration opportunities.
+                  If you have a project in mind, let&#39;s discuss how we can make it happen!
                 </p>
                 <Button variant="outline" asChild>
                   <a href="mailto:piyush@example.com">
